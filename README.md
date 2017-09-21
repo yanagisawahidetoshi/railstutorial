@@ -720,6 +720,13 @@ flash[:success] = "Welcome to the Sample App!"
       <% end %>
 ```
 
+### 一度だけのflashメッセージ
+.nowをつけるとその後のリクエストからは消滅
+
+```ruby
+flash.now[:danger] = 'Invalid email/password combination'
+```
+
 ## DBの中身リセット
 
 ```bash
